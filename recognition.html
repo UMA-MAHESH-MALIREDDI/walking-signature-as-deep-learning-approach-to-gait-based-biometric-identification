@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gait Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Walking Signature: A New Approach To Human Identification</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="train.html">Train Model</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Gait Recognition System</h2>
+        <div class="buttons">
+            <input type="file" id="videoFile" accept="video/*">
+            <button onclick="processVideo()">Predict</button>
+        </div>
+        
+        <!-- Video Player & Processing Preview -->
+        <div class="video-section">
+            <div class="video-container">
+                <video id="uploadedVideo" controls></video>
+                <canvas id="processingPreview"></canvas>
+            </div>
+        </div>
+
+        <!-- Prediction Output -->
+        <div class="prediction-output">
+            <h3>Identified User:</h3>
+            <p id="userName">No prediction yet.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
